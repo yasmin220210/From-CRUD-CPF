@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glam Beauty - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <h1>Login Glam </h1>
+        <form onsubmit="event.preventDefault();">
+            <div class="form-group">
+                <label for="loginEmail">E-mail</label>
+                <input type="email" id="loginEmail" placeholder="seuemail@email.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="loginSenha">Senha</label>
+                <input type="password" id="loginSenha" placeholder="••••••••" required>
+            </div>
+
+            <button type="button" onclick="alert('Login efetuado com sucesso!')">Entrar</button>
+        </form>
+
+        <a href="/FORM-CRUD-CPF/public/index.html" class="login-link">Não tem uma conta? Cadastre-se aqui</a>
+
+        <div style="margin-top: 25px; border-top: 1px dashed #f8d7da; padding-top: 15px;">
+            <a href="/FORM-CRUD-CPF/public/admin.html" class="login-link" style="color: #b8506f; font-weight: bold;"> Acesso Restrito (Admin)</a>
+        </div>
+    </div>
+</body>
+</html>

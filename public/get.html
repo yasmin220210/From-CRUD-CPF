@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glam Beauty - Clientes Cadastradas</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bloqueia o acesso sem login admin -->
+    <script src="auth-check.js"></script>
+</head>
+<body>
+    <div class="card" style="max-width: 700px;">
+        <h1>Clientes Cadastradas ✨</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>CPF</th>
+                    <th>E-mail</th>
+                    <th>Telefone</th>
+                </tr>
+            </thead>
+            <tbody id="tabela-corpo"></tbody>
+        </table>
+
+        <a href="admin-dashboard.html" class="login-link">← Voltar ao Painel Admin</a>
+    </div>
+
+    <script src="get.js"></script>
+</body>
+</html>

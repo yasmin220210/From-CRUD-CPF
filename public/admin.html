@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glam Beauty - Admin Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <h1>Painel Admin </h1>
+        <form id="formAdmin" onsubmit="event.preventDefault();">
+            <div class="form-group">
+                <label for="adminUser">Usuário Admin</label>
+                <input type="text" id="adminUser" placeholder="admin" required>
+            </div>
+
+            <div class="form-group">
+                <label for="adminPass">Senha</label>
+                <input type="password" id="adminPass" placeholder="••••••••" required>
+            </div>
+
+            <button type="button" onclick="autenticarAdmin()">Acessar Painel</button>
+        </form>
+
+        <a href="login.html" class="login-link">← Voltar ao login de clientes</a>
+    </div>
+
+    <script>
+        function autenticarAdmin() {
+            const usuario = document.getElementById('adminUser').value;
+            const senha = document.getElementById('adminPass').value;
+
+            // Credenciais do Administrador (Pode ser alterado ou validado no Backend)
+            if (usuario === "admin" && senha === "123456") {
+                sessionStorage.setItem('adminLogado', 'true');
+                alert("Acesso concedido!");
+                window.location.href = "admin-dashboard.html";
+            } else {
+                alert("Usuário ou senha de administrador incorretos!");
+
+                
+            }
+        }
+    </script>
+</body>
+</html>

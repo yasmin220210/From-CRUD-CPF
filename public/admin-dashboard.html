@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glam Beauty - Painel Admin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card" style="max-width: 600px;">
+        <h1>Painel de Controle Admin </h1>
+        <p style="margin-bottom: 20px; color: #8c5365;">Selecione a ação desejada no sistema:</p>
+
+        <nav style="flex-direction: column; gap: 10px;">
+            <a href="get.html" style="padding: 12px;">📋 Visualizar Clientes Cadastrados (GET)</a>
+            <a href="put.html" style="padding: 12px;">✏️ Atualizar Dados de Cliente (PUT)</a>
+            <a href="delete.html" style="padding: 12px;">🗑️ Remover Cliente do Sistema (DELETE)</a>
+        </nav>
+
+        <button onclick="sairAdmin()" style="background-color: #888; margin-top: 25px;">Sair do Painel Admin</button>
+    </div>
+
+    <script src="auth-check.js"></script>
+</body>
+</html>

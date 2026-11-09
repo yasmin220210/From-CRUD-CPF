@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #fdf2f4;
+    color: #4a3e3d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Card centralizado */
+.card {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(232, 131, 158, 0.2);
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+    border: 1px solid #f8d7da;
+}
+
+h1 {
+    color: #d86b8b;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+/* Form e Inputs */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #8c5365;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1.5px solid #f1c6d3;
+    border-radius: 10px;
+    outline: none;
+    background-color: #fffafb;
+    font-size: 0.95rem;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #d86b8b;
+}
+
+input:disabled {
+    background-color: #eee;
+    cursor: not-allowed;
+}
+
+/* Botões */
+button, input[type="button"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #d86b8b;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 10px;
+}
+
+button:hover, input[type="button"]:hover {
+    background-color: #b8506f;
+    transform: translateY(-2px);
+}
+
+/* Navegação por Links */
+nav {
+    margin-top: 25px;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #d86b8b;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.85rem;
+    padding: 6px 12px;
+    border-radius: 15px;
+    background-color: #fce4ec;
+    transition: all 0.3s;
+}
+
+nav a:hover {
+    background-color: #d86b8b;
+    color: white;
+}
+
+/* Tabela de Cadastrados */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #f8d7da;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+th {
+    background-color: #fce4ec;
+    color: #d86b8b;
+}
